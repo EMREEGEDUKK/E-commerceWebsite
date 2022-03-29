@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resimler/knitting.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+<link rel="stylesheet" href="style.css">
+    <title>Girişimci Kadın</title>
+</head>
+<body>
+    <!-- header kısmı -->
+    <header class="header">
+        <div class="contSect">
+            <div class="container">
+                <p> Telefonla sipariş için:(537 123 4567)</p>  
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="navmain container fible">
+                <a href="index.html" class="logo"> <h1>Girişimci</h1></a>
+
+                <ul class="nav-list fible">
+                   <li class="navi">
+                    <a href="index.html" class="alink">Ana Sayfa</a>
+                   </li> 
+                   <li class="navi">
+                    <a href="store.html" class="alink">Mağaza</a>
+                   </li>
+                   <li class="navi">
+                    <a href="aboutus.html" class="alink">Hakkımda</a>
+                   </li> 
+                   <li class="navi">
+                    <a href="feedback.html" class="alink">İletişim</a>
+                   </li>
+                   <li class="icons fible">
+                        <a href="#" class="icon"><i class='bx bx-user' ></i></a>
+                        <div class="icon"><i class='bx bx-search' ></i></div>
+                        <div class="icon">
+                            <i class='bx bx-heart' ></i>
+                            
+                        </div>
+                     <a href="store.html" class="icon">
+                         <i class='bx bx-cart' ></i>
+                         
+                     </a>
+
+                   </li>
+                
+                </ul>
+                <div class="icons fible">
+                    <a href="login.html" class="icon"><i class='bx bx-home-alt'></i></a>
+                   <div class="icon"><i class='bx bx-search' ></i></div>
+                   <div class="icon">
+                       <i class='bx bx-heart' ></i>
+                        <span class="fible">
+                            <script>
+                                var x =0;
+                                document.write(x);
+                            </script>
+                        </span>
+                   </div>
+                    <a href="store.html" class="icon">
+                        <i class='bx bx-cart' ></i>
+                        <span class="fible">
+                            <script>
+                                var y =0;
+                                document.write(x);
+                            </script>
+
+                        </span>
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <i class='bx bx-menu' ></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="feedback-form">
+                <form action="">
+                    <h1>FEEDBACK</h1>
+                    <p>geri dönüşlerinizi bekliyoruz...</p>
+                    <label for="name">Adınız:</label>
+                        <input type="text" name="name" id="" placeholder="isminizi giriniz" required>
+
+                        <label for="mail">E-mail adresiniz:</label>
+                        <input type="email" name="mail" id="" placeholder="soyadınızı giriniz" required>
+
+                        <label for="surname">Feedback:</label>
+                        <textarea name="" id="" placeholder="geri bildiriminizi giriniz." required></textarea>
+                        <p class="lastp">Gizlilik koşullarımızı kabul ediyorsunuz <input type="checkbox" required></a></p>
+
+                        <div class="btncheck">
+                            <button type="reset" class="cbtn">Temizle</button>
+                            <button class="cbtn">Gönder</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="row">
+                <div class="col fible">
+                    <h4>Genel Bilgiler</h4>
+                    <a href="">Hakkımda</a>
+                    <a href="">Adres</a>
+                    <a href="">Telefon</a>
+                    <a href="">Üretim</a>
+                </div>
+                <div class="col fible">
+                    <h4>Ürün bilgileri</h4>
+                    <a href="">Malzeme Bilgileri</a>
+                    <a href="">Diğer Satıcılar</a>
+                    <a href="">Mağaza</a>
+                    <a href="">Kargo</a>
+                </div>
+                <div class="col fible">
+                    <span><a href="#payment"></a><i class='bx bxl-mastercard'></i></span>
+                    <span><a href="https://www.facebook.com/"></a><i class='bx bxl-facebook'></i></span>
+                    <span><a href="https://twitter.com/"></a><i class='bx bxl-twitter'></i></span>
+                    <span><a href="https://linkedin.com/"></a><i class='bx bxl-linkedin'></i></span>
+                    <span><a href="https://pinterest.com/"></a><i class='bx bxl-pinterest'></i></span>
+                </div>
+            </div>
+        </footer>
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+        const navList =document.querySelector(".nav-list");
+    if (hamburger){
+    hamburger.addEventListener("click",()=>{
+        navList.classList.toggle("open");
+        });
+    }
+        </script>
+            
+        </body>

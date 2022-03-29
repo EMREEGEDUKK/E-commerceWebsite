@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*,*::after,*::before{ /* glide js kullandığım için sayfa kaydığında da aynı görünmesi için before after a da css uyguladım*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;/* genelde kullanılan oran bu olduğu için 62.5 kullandım.*/
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.6rem; /* 1 rem =16 px çoğu sitede kullanılan oran 1.6 rem dir.*/
+    background-color: #fff;
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type:none;
+}
+.container{
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.header{
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+.top-nav{
+    background-color: rgb(12, 192, 12);
+    font-size: 1.3rem;
+    color: #fff;  
+}
+.top-nav div{
+    justify-content: space-between;
+    height: 4.5rem;
+    
+}
+.top-nav a{
+    padding: 0 0.5rem;
+    color: #fff;
+}
+.navigation{
+    height: 6rem;
+    line-height: 6rem;
+}
+.nav-center{
+    justify-content: space-between;
+}
+.nav-center .nav-item:not(:last-child){
+    margin-right: 0.5rem;
+}
+.nav-center .nav-link{
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+.nav-center .nav-link:hover {
+    color: green;
+}
+.icon{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    color: #555;
+    position: relative;
+}
+.icon:not(:last-child){
+    margin-right: 0.5rem;
+}
+.icon span{
+    position: absolute;
+    top: 3px;
+    right: -3px;
+    background-color: green;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 2rem;
+    justify-content: center;
+}
+.nav-list .icons{
+    display: none;
+}
+.nav-center .hamburger{
+    display: none;
+    font-size: 2.3rem;
+    color:black;
+    cursor: pointer;
+}
+@media(max-width:768px){
+    .nav-list{
+        position: fixed;
+        top: 12%;
+        left: -100%;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        height: 100%;
+        max-width: 35rem;
+        width: 0;
+        z-index: 100;
+        transition: all 300ms ease-in-out;
+    }
+    .nav-list.open{
+        left: 0;
+        width: 100%;
+    }
+    .nav-list .nav-item{
+        margin: 0 0 1rem 0;
+        width: 100%;
+        
+    }
+    .nav-list .nav-link{
+        font-size: 2rem;
+        color: black;
+    }
+    .nav-center .hamburger{
+        display: block;
+        font-size: 3rem;
+    }
+    .icons{
+        display: none;
+    }
+    .nav-list .icons{
+        display: flex;
+    }
+    .top-nav ul{
+        display: none;
+    }
+    .top-nav div{
+        justify-content: center;
+        height: 3rem;
+    }
+
+}

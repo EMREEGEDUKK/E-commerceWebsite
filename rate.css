@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  background: rgb(11, 180, 11);
+  color: #fff;
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+}
+.content p{
+  position: relative;
+  color: #000;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.container{
+  position: relative;
+  width:400px;
+  background: rgb(44, 42, 43);
+  padding: 20px 30px;
+  flex-direction: column;
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 1.5rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.container .parag{
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: rgb(245, 240, 240);
+  font-weight: bold;
+  padding: 10px;
+}
+.container .rts{
+  display: none;
+  align-items: center;
+}
+
+
+.container .star-widget input{
+  display: none;
+}
+.star-widget label{
+  color: rgb(175, 170, 170);
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease-in-out;
+  font-size: 40px;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: rgb(27, 212, 27);
+}
+input:checked ~ label{
+  color: rgb(27, 212, 27);
+}
+input#rate-5:checked ~ label{
+  color: rgb(27, 212, 27);
+  text-shadow: 0 0 20px rgb(27, 212, 27);
+}
+#rate-1:checked ~ form header:before{
+  content: "çok kötü ";
+}
+#rate-2:checked ~ form header:before{
+  content: "kötü ";
+}
+#rate-3:checked ~ form header:before{
+  content: "idare eder ";
+}
+#rate-4:checked ~ form header:before{
+  content: "beğendim ";
+}
+#rate-5:checked ~ form header:before{
+  content: "mükemmel ";
+}
+.container form{
+  display: none;
+}
+form header{
+  width: 100%;
+  font-size: 1.5rem;
+  color: rgb(27, 212, 27);
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+input:checked ~ form{
+  display: block;
+}
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border: 2px solid rgb(14, 13, 13);
+  outline: none;
+  background: #222;
+  color: rgb(27, 212, 27);
+  font-size: 1rem;
+  padding: 10px;
+  resize: none;
+  text-transform: lowercase;
+}
+
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button{
+  height: 100%;
+  width: 100%;
+  border: 2px solid rgb(17, 17, 17);
+  outline: none;
+  background: #222;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+}
